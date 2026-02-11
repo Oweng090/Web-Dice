@@ -1,3 +1,19 @@
 body {
     background-color: black;
 }
+
+h1 {
+    color: lightslategray;
+}
+
+.container > div {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: lightslategrey;
+    border: 2px solid green;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+}
