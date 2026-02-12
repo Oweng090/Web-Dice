@@ -5,13 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Dice</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="images/image.ico" type="ico">
+    <link rel="icon" href="images/Dice.ico" type="ico">
+    <style>
+        .square-box {
+            background-color: white;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Web Dice</h1>
+    <button onclick="createSquare()">Roll Dice</button>
+    <div id="container">
+        <script>
+            function createSquare() {
+                // 1. Create a new div element
+                var square = document.createElement('div');
+
+                // 2. Add a class for styling 
+                square.className = 'square-box';
+
+                // 3. Set equal width and height using JavaScript to make it a square
+                var size = 100; // 100 pixels
+                square.style.width = size + 'px';
+                square.style.height = size + 'px';
+
+                // 4. Append the new square to the container
+                document.getElementById('container').appendChild(square);
+            }
+        </script>
     </div>
-   
-    
 </body>
 </html>
