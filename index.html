@@ -6,33 +6,13 @@
     <title>Web Dice</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="images/Dice.ico" type="ico">
-    <style>
-        .square-box {
-            background-color: white;
-            margin-top: 10px;
-        }
-    </style>
 </head>
 <body>
-    <button onclick="createSquare()">Roll Dice</button>
-    <div id="container">
-        <script>
-            function createSquare() {
-                // 1. Create a new div element
-                var square = document.createElement('div');
-
-                // 2. Add a class for styling 
-                square.className = 'square-box';
-
-                // 3. Set equal width and height using JavaScript to make it a square
-                var size = 100; // 100 pixels
-                square.style.width = size + 'px';
-                square.style.height = size + 'px';
-
-                // 4. Append the new square to the container
-                document.getElementById('container').appendChild(square);
-            }
-        </script>
+    
+    <button onclick="rollDice()" class="rollButton">Roll Dice</button>
+    <div id="container" class="container">
     </div>
+    <div id="leftDotContainer" class="container"></div>
+    <script src="functions.js"></script>
 </body>
 </html>

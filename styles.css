@@ -2,9 +2,45 @@ body {
     background-color: black;
 }
 
-body button {
+.rollButton {
     background-color: chartreuse;
-    position: fixed;
-    left: 600px;
-    top: 350px;
+    position: relative;
+    top: 300px;
+    left:700px;
+    width: 100px;
+}
+
+.dice-1 {
+    background-color: white;
+    position: relative;
+    margin-top: 10px;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.dice-2 {
+    background-color: white;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 50px;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.dot-1 {
+    background-color: black;
+    position: relative;
+    top: -120px;
+    left: -120px;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+    /*background-color: lightgrey;*/
+    border: 2px blue;
 }
