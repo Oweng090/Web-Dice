@@ -65,7 +65,9 @@ body {
 
 .leftTopRightDot {
     position: relative;
-    background-color: lime;
+    background-color: black;
+    bottom: 180px;
+    right: 160px;
 
     border-radius: 50%;
     z-index: 2;
