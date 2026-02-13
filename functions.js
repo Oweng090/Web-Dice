@@ -8,6 +8,14 @@ var ltrDot = document.createElement('div');
 var lmrDot = document.createElement('div');
 var lbrDot = document.createElement('div');
 
+var rmDot = document.createElement('div');
+var rtlDot = document.createElement('div');
+var rmlDot = document.createElement('div');
+var rblDot = document.createElement('div');
+var rtrDot = document.createElement('div');
+var rmrDot = document.createElement('div');
+var rbrDot = document.createElement('div');
+
 dice1.className = 'dice-1';
 dice2.className = 'dice-2';
 lmDot.className = 'dot-1';
@@ -18,6 +26,13 @@ ltrDot.className = 'leftTopRightDot';
 lmrDot.className = 'leftMiddleRightDot';
 lbrDot.className = 'leftBottomRightDot';
 
+rmDot.className = 'rightMiddleDot';
+rtlDot.className = 'rightTopLeftDot';
+rmlDot.className = 'rightMiddleLeftDot';
+rblDot.className = 'rightBottomLeftDot';
+rtrDot.className = 'rightTopRightDot';
+rmrDot.className = 'rightMiddleRightDot';
+rbrDot.className = 'rightBottomRightDot';
 
 var size = 200;
 var dotSize = 40;
@@ -48,8 +63,30 @@ lmrDot.style.width = dotSize + 'px';
 lbrDot.style.height = dotSize + 'px';
 lbrDot.style.width = dotSize + 'px';
 
+rmDot.style.height = dotSize + 'px';
+rmDot.style.width = dotSize + 'px';
+
+rtlDot.style.height = dotSize + 'px';
+rtlDot.style.width = dotSize + 'px';
+
+rmlDot.style.height = dotSize + 'px';
+rmlDot.style.width = dotSize + 'px';
+
+rblDot.style.height = dotSize + 'px';
+rblDot.style.width = dotSize + 'px';
+
+rtrDot.style.height = dotSize + 'px';
+rtrDot.style.width = dotSize + 'px';
+
+rmrDot.style.height = dotSize + 'px';
+rmrDot.style.width = dotSize + 'px';
+
+rbrDot.style.height = dotSize + 'px';
+rbrDot.style.width = dotSize + 'px';
+// left dice
 document.getElementById('container').appendChild(dice1);
 document.getElementById('container').appendChild(dice2);
+// left dice dots
 document.getElementById('leftDotContainer').appendChild(lmDot);
 document.getElementById('leftDotContainer').appendChild(ltlDot);
 document.getElementById('leftDotContainer').appendChild(lmlDot);
@@ -57,6 +94,14 @@ document.getElementById('leftDotContainer').appendChild(lblDot);
 document.getElementById('leftDotContainer').appendChild(ltrDot);
 document.getElementById('leftDotContainer').appendChild(lmrDot);
 document.getElementById('leftDotContainer').appendChild(lbrDot);
+
+document.getElementById('rightDotContainer').appendChild(rmDot);
+document.getElementById('rightDotContainer').appendChild(rtlDot);
+document.getElementById('rightDotContainer').appendChild(rmlDot);
+document.getElementById('rightDotContainer').appendChild(rblDot);
+document.getElementById('rightDotContainer').appendChild(rtrDot);
+document.getElementById('rightDotContainer').appendChild(rmrDot);
+document.getElementById('rightDotContainer').appendChild(rbrDot);
 
 function rollDice() {
     const dice1roll = Math.floor(Math.random() * 6) + 1;
@@ -76,5 +121,110 @@ function rollDice() {
         document.querySelector(".leftTopLeftDot").style.zIndex = "2";
         document.querySelector(".leftMiddleLeftDot").style.zIndex = "0";
         document.querySelector(".leftBottomLeftDot").style.zIndex = "0";
+        document.querySelector(".leftTopRightDot").style.zIndex = "0";
+        document.querySelector(".leftMiddleRightDot").style.zIndex = "0";
+        document.querySelector(".leftBottomRightDot").style.zIndex = "2";
+    }
+
+    else if(dice1roll == 3) {
+        document.querySelector(".dot-1").style.zIndex = "2";
+        document.querySelector(".leftTopLeftDot").style.zIndex = "2";
+        document.querySelector(".leftMiddleLeftDot").style.zIndex = "0";
+        document.querySelector(".leftBottomLeftDot").style.zIndex = "0";
+        document.querySelector(".leftTopRightDot").style.zIndex = "0";
+        document.querySelector(".leftMiddleRightDot").style.zIndex = "0";
+        document.querySelector(".leftBottomRightDot").style.zIndex = "2";
+    }
+
+    else if(dice1roll == 4) {
+        document.querySelector(".dot-1").style.zIndex = "0";
+        document.querySelector(".leftTopLeftDot").style.zIndex = "2";
+        document.querySelector(".leftMiddleLeftDot").style.zIndex = "0";
+        document.querySelector(".leftBottomLeftDot").style.zIndex = "2";
+        document.querySelector(".leftTopRightDot").style.zIndex = "2";
+        document.querySelector(".leftMiddleRightDot").style.zIndex = "0";
+        document.querySelector(".leftBottomRightDot").style.zIndex = "2";
+    }
+
+    else if(dice1roll == 5) {
+        document.querySelector(".dot-1").style.zIndex = "2";
+        document.querySelector(".leftTopLeftDot").style.zIndex = "2";
+        document.querySelector(".leftMiddleLeftDot").style.zIndex = "0";
+        document.querySelector(".leftBottomLeftDot").style.zIndex = "2";
+        document.querySelector(".leftTopRightDot").style.zIndex = "2";
+        document.querySelector(".leftMiddleRightDot").style.zIndex = "0";
+        document.querySelector(".leftBottomRightDot").style.zIndex = "2";
+    }
+
+    else if(dice1roll == 6) {
+        document.querySelector(".dot-1").style.zIndex = "0";
+        document.querySelector(".leftTopLeftDot").style.zIndex = "2";
+        document.querySelector(".leftMiddleLeftDot").style.zIndex = "2";
+        document.querySelector(".leftBottomLeftDot").style.zIndex = "2";
+        document.querySelector(".leftTopRightDot").style.zIndex = "2";
+        document.querySelector(".leftMiddleRightDot").style.zIndex = "2";
+        document.querySelector(".leftBottomRightDot").style.zIndex = "2";
+    }
+
+    const dice2roll = Math.floor(Math.random() * 6) + 1;
+
+    if(dice2roll == 1) {
+        document.querySelector(".rightMiddleDot").style.zIndex = "2";
+        document.querySelector(".rightTopLeftDot").style.zIndex = "0";
+        document.querySelector(".rightMiddleLeftDot").style.zIndex = "0";
+        document.querySelector(".rightBottomLeftDot").style.zIndex = "0";
+        document.querySelector(".rightTopRightDot").style.zIndex = "0";
+        document.querySelector(".rightMiddleRightDot").style.zIndex = "0";
+        document.querySelector(".rightBottomRightDot").style.zIndex = "0";
+    }
+
+    else if(dice2roll == 2) {
+        document.querySelector(".rightMiddleDot").style.zIndex = "0";
+        document.querySelector(".rightTopLeftDot").style.zIndex = "2";
+        document.querySelector(".rightMiddleLeftDot").style.zIndex = "0";
+        document.querySelector(".rightBottomLeftDot").style.zIndex = "0";
+        document.querySelector(".rightTopRightDot").style.zIndex = "0";
+        document.querySelector(".rightMiddleRightDot").style.zIndex = "0";
+        document.querySelector(".rightBottomRightDot").style.zIndex = "2";
+    }
+
+    else if(dice2roll == 3) {
+        document.querySelector(".rightMiddleDot").style.zIndex = "2";
+        document.querySelector(".rightTopLeftDot").style.zIndex = "2";
+        document.querySelector(".rightMiddleLeftDot").style.zIndex = "0";
+        document.querySelector(".rightBottomLeftDot").style.zIndex = "0";
+        document.querySelector(".rightTopRightDot").style.zIndex = "0";
+        document.querySelector(".rightMiddleRightDot").style.zIndex = "0";
+        document.querySelector(".rightBottomRightDot").style.zIndex = "2";
+    }
+
+    else if(dice2roll == 4) {
+        document.querySelector(".rightMiddleDot").style.zIndex = "0";
+        document.querySelector(".rightTopLeftDot").style.zIndex = "2";
+        document.querySelector(".rightMiddleLeftDot").style.zIndex = "0";
+        document.querySelector(".rightBottomLeftDot").style.zIndex = "2";
+        document.querySelector(".rightTopRightDot").style.zIndex = "2";
+        document.querySelector(".rightMiddleRightDot").style.zIndex = "0";
+        document.querySelector(".rightBottomRightDot").style.zIndex = "2";
+    }
+
+    else if(dice2roll == 5) {
+        document.querySelector(".rightMiddleDot").style.zIndex = "2";
+        document.querySelector(".rightTopLeftDot").style.zIndex = "2";
+        document.querySelector(".rightMiddleLeftDot").style.zIndex = "0";
+        document.querySelector(".rightBottomLeftDot").style.zIndex = "2";
+        document.querySelector(".rightTopRightDot").style.zIndex = "2";
+        document.querySelector(".rightMiddleRightDot").style.zIndex = "0";
+        document.querySelector(".rightBottomRightDot").style.zIndex = "2";
+    }
+
+    else if(dice2roll == 6) {
+        document.querySelector(".rightMiddleDot").style.zIndex = "0";
+        document.querySelector(".rightTopLeftDot").style.zIndex = "2";
+        document.querySelector(".rightMiddleLeftDot").style.zIndex = "2";
+        document.querySelector(".rightBottomLeftDot").style.zIndex = "2";
+        document.querySelector(".rightTopRightDot").style.zIndex = "2";
+        document.querySelector(".rightMiddleRightDot").style.zIndex = "2";
+        document.querySelector(".rightBottomRightDot").style.zIndex = "2";
     }
 }
