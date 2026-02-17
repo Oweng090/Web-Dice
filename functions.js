@@ -228,3 +228,30 @@ function rollDice() {
         document.querySelector(".rightBottomRightDot").style.zIndex = "2";
     }
 }
+
+function theme1() {
+    dice1.style.backgroundColor = "black";
+    dice2.style.backgroundColor = "black";
+    dice2.style.borderWidth = '3px';
+    dice2.style.borderColor = 'white';
+    dice2.style.borderStyle = 'solid';
+    dice1.style.borderWidth = '3px';
+    dice1.style.borderColor = 'white';
+    dice1.style.borderStyle = "solid";
+
+    lmDot.style.backgroundColor = 'white';
+    ltlDot.style.backgroundColor = 'white';
+    lmlDot.style.backgroundColor = 'white';
+    lblDot.style.backgroundColor = 'white';
+    ltrDot.style.backgroundColor = 'white';
+    lmrDot.style.backgroundColor = 'white';
+    lbrDot.style.backgroundColor = 'white';
+
+    rmDot.style.backgroundColor = 'white';
+    rtlDot.style.backgroundColor = 'white';
+    rmlDot.style.backgroundColor = 'white';
+    rblDot.style.backgroundColor = 'white';
+    rtrDot.style.backgroundColor = 'white';
+    rmrDot.style.backgroundColor = 'white';
+    rbrDot.style.backgroundColor = 'white';
+}

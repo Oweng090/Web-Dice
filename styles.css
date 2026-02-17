@@ -10,6 +10,23 @@ body {
     border-style:groove; 
 }
 
+.button {
+    background-color: chartreuse;
+    position: relative;
+    border-width: 10px;
+    border-color: blue;
+    border-style: groove;
+}
+
+.darkButton {
+    background-color: black;
+    position: relative;
+    border-width: 10px;
+    border-color: white;
+    border-style:inset;
+    color: white;
+}
+
 .dice-1 {
     background-color: white;
     position: relative;
