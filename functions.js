@@ -230,30 +230,30 @@ function rollDice() {
 }
 
 function theme1() {
-    dice1.style.backgroundColor = "black";
-    dice2.style.backgroundColor = "black";
-    dice2.style.borderWidth = '3px';
+    dice1.style.backgroundColor = "white";
+    dice2.style.backgroundColor = "white";
+    dice2.style.borderWidth = '0px';
     dice2.style.borderColor = 'white';
     dice2.style.borderStyle = 'solid';
-    dice1.style.borderWidth = '3px';
+    dice1.style.borderWidth = '0px';
     dice1.style.borderColor = 'white';
     dice1.style.borderStyle = "solid";
 
-    lmDot.style.backgroundColor = 'white';
-    ltlDot.style.backgroundColor = 'white';
-    lmlDot.style.backgroundColor = 'white';
-    lblDot.style.backgroundColor = 'white';
-    ltrDot.style.backgroundColor = 'white';
-    lmrDot.style.backgroundColor = 'white';
-    lbrDot.style.backgroundColor = 'white';
+    lmDot.style.backgroundColor = 'black';
+    ltlDot.style.backgroundColor = 'black';
+    lmlDot.style.backgroundColor = 'black';
+    lblDot.style.backgroundColor = 'black';
+    ltrDot.style.backgroundColor = 'black';
+    lmrDot.style.backgroundColor = 'black';
+    lbrDot.style.backgroundColor = 'black';
 
-    rmDot.style.backgroundColor = 'white';
-    rtlDot.style.backgroundColor = 'white';
-    rmlDot.style.backgroundColor = 'white';
-    rblDot.style.backgroundColor = 'white';
-    rtrDot.style.backgroundColor = 'white';
-    rmrDot.style.backgroundColor = 'white';
-    rbrDot.style.backgroundColor = 'white';
+    rmDot.style.backgroundColor = 'black';
+    rtlDot.style.backgroundColor = 'black';
+    rmlDot.style.backgroundColor = 'black';
+    rblDot.style.backgroundColor = 'black';
+    rtrDot.style.backgroundColor = 'black';
+    rmrDot.style.backgroundColor = 'black';
+    rbrDot.style.backgroundColor = 'black';
 }
 
 function theme2() {
