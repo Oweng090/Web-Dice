@@ -255,3 +255,30 @@ function theme1() {
     rmrDot.style.backgroundColor = 'white';
     rbrDot.style.backgroundColor = 'white';
 }
+
+function theme2() {
+    dice1.style.backgroundColor = 'lightblue';
+    dice1.style.borderWidth = '3px';
+    dice1.style.borderColor = 'red';
+    dice1.style.borderStyle = 'solid';
+    dice2.style.backgroundColor = 'lightblue';
+    dice2.style.borderWidth = '3px';
+    dice2.style.borderColor = 'red';
+    dice2.style.borderStyle = 'solid';
+
+    lmDot.style.backgroundColor = 'black';
+    ltlDot.style.backgroundColor = 'black';
+    lmlDot.style.backgroundColor = 'black';
+    lblDot.style.backgroundColor = 'black';
+    ltrDot.style.backgroundColor = 'black';
+    lmrDot.style.backgroundColor = 'black';
+    lbrDot.style.backgroundColor = 'black';
+
+    rmDot.style.backgroundColor = 'black';
+    rtlDot.style.backgroundColor = 'black';
+    rmlDot.style.backgroundColor = 'black';
+    rblDot.style.backgroundColor = 'black';
+    rtrDot.style.backgroundColor = 'black';
+    rmrDot.style.backgroundColor = 'black';
+    rbrDot.style.backgroundColor = 'black';
+}
