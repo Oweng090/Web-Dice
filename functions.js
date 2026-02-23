@@ -257,12 +257,12 @@ function theme1() {
 }
 
 function theme2() {
-    dice1.style.backgroundColor = 'lightblue';
-    dice1.style.borderWidth = '3px';
+    dice1.style.backgroundColor = 'red';
+    dice1.style.borderWidth = '0px';
     dice1.style.borderColor = 'red';
     dice1.style.borderStyle = 'solid';
-    dice2.style.backgroundColor = 'lightblue';
-    dice2.style.borderWidth = '3px';
+    dice2.style.backgroundColor = 'red';
+    dice2.style.borderWidth = '0px';
     dice2.style.borderColor = 'red';
     dice2.style.borderStyle = 'solid';
 
