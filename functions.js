@@ -284,5 +284,7 @@ function theme2() {
 }
 
 function theme3() {
-    
+    /* Maybe add more customization for user */
+    /* like header dice backround, and some color option buttons */
+    /* do that for every element in the dice */
 }
