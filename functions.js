@@ -282,3 +282,7 @@ function theme2() {
     rmrDot.style.backgroundColor = 'black';
     rbrDot.style.backgroundColor = 'black';
 }
+
+function theme3() {
+    
+}
