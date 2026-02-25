@@ -264,10 +264,22 @@ function backgroundWhite() {
     changeBackground('white', 'black')
 }
 
+function backgroundBlack() {
+    changeBackground('black', 'white')
+}
+
 function diceWhite() {
     changeDiceColor('white')
 }
 
+function diceBlack() {
+    changeDiceColor('black')
+}
+
 function dotWhite() {
     changeDotColor('white')
+}
+
+function dotBlack() {
+    changeDotColor('black')
 }
