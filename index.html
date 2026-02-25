@@ -12,11 +12,24 @@
     </div>
     <div id="leftDotContainer" class="container"></div>
     <div id="rightDotContainer" class="container"></div>
-    <div id="ButtonContainer" class="container">
+    <div id="RollButtonContainer" class="container">
         <button onclick="rollDice()" class="rollButton">Roll Dice</button>
-        <button onclick="theme1()" class="darkButton">Theme 1</button>
-        <button onclick="theme2()" class="redButton">Theme 2</button>
-        <button onclick="theme3()" class="button">Theme 3</button>
+    </div>
+
+    <div id="ThemeTitle" class="container">
+        <h1 id="ThemeOptionTitle" class="Title">Themes</h1>
+    </div>
+
+    <div id="ThemeOptionContainer" class="container">
+        <h2 id="BackgroundColorH" class="ThemeH">Background Color</h2>
+        <h2 id="DiceColorH" class="ThemeH">Dice Color</h2>
+        <h2 id="DotColorH" class="ThemeH">Dot Color</h2>
+    </div>
+    
+    <div id="ThemeButtonContainer" class="container">
+        <button onclick="backgroundWhite()" class="button">White</button>
+        <button onclick="diceWhite()" class="button">White</button>
+        <button onclick="dotWhite()" class="button">White</button>
     </div>
     <script src="functions.js"></script>
 </body>

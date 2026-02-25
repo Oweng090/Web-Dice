@@ -11,15 +11,6 @@ body {
     border-radius: 20%;
 }
 
-.redButton {
-    background-color: red;
-    position: relative;
-    border-width: 10px;
-    border-color: red;
-    border-style: inset;
-    border-radius: 20%;
-}
-
 .button {
     background-color: chartreuse;
     position: relative;
@@ -27,16 +18,7 @@ body {
     border-color: blue;
     border-style: inset;
     border-radius: 20%;
-}
-
-.darkButton {
-    background-color: black;
-    position: relative;
-    border-width: 10px;
-    border-color: white;
-    border-style:inset;
-    color: white;
-    border-radius: 20%;
+    margin-left: 20px;
 }
 
 .dice-1 {
@@ -188,4 +170,15 @@ body {
     display:flex;
     justify-content: center;
     align-items: center;
+}
+
+.ThemeH {
+    color: white;
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+.Title {
+    color: white;
+    font-size: 30px;
 }

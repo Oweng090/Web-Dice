@@ -229,62 +229,45 @@ function rollDice() {
     }
 }
 
-function theme1() {
-    dice1.style.backgroundColor = "white";
-    dice2.style.backgroundColor = "white";
-    dice2.style.borderWidth = '0px';
-    dice2.style.borderColor = 'white';
-    dice2.style.borderStyle = 'solid';
-    dice1.style.borderWidth = '0px';
-    dice1.style.borderColor = 'white';
-    dice1.style.borderStyle = "solid";
-
-    lmDot.style.backgroundColor = 'black';
-    ltlDot.style.backgroundColor = 'black';
-    lmlDot.style.backgroundColor = 'black';
-    lblDot.style.backgroundColor = 'black';
-    ltrDot.style.backgroundColor = 'black';
-    lmrDot.style.backgroundColor = 'black';
-    lbrDot.style.backgroundColor = 'black';
-
-    rmDot.style.backgroundColor = 'black';
-    rtlDot.style.backgroundColor = 'black';
-    rmlDot.style.backgroundColor = 'black';
-    rblDot.style.backgroundColor = 'black';
-    rtrDot.style.backgroundColor = 'black';
-    rmrDot.style.backgroundColor = 'black';
-    rbrDot.style.backgroundColor = 'black';
+function changeBackground(color, textcolor) {
+    document.body.style.backgroundColor = color;
+    document.querySelector(".Title").style.color = textcolor;
+    document.getElementById("BackgroundColorH").style.color = textcolor;
+    document.getElementById("DiceColorH").style.color = textcolor;
+    document.getElementById("DotColorH").style.color = textcolor;
 }
 
-function theme2() {
-    dice1.style.backgroundColor = 'red';
-    dice1.style.borderWidth = '0px';
-    dice1.style.borderColor = 'red';
-    dice1.style.borderStyle = 'solid';
-    dice2.style.backgroundColor = 'red';
-    dice2.style.borderWidth = '0px';
-    dice2.style.borderColor = 'red';
-    dice2.style.borderStyle = 'solid';
-
-    lmDot.style.backgroundColor = 'black';
-    ltlDot.style.backgroundColor = 'black';
-    lmlDot.style.backgroundColor = 'black';
-    lblDot.style.backgroundColor = 'black';
-    ltrDot.style.backgroundColor = 'black';
-    lmrDot.style.backgroundColor = 'black';
-    lbrDot.style.backgroundColor = 'black';
-
-    rmDot.style.backgroundColor = 'black';
-    rtlDot.style.backgroundColor = 'black';
-    rmlDot.style.backgroundColor = 'black';
-    rblDot.style.backgroundColor = 'black';
-    rtrDot.style.backgroundColor = 'black';
-    rmrDot.style.backgroundColor = 'black';
-    rbrDot.style.backgroundColor = 'black';
+function changeDiceColor(color) {
+    dice1.style.backgroundColor = color;
+    dice2.style.backgroundColor = color;
 }
 
-function theme3() {
-    /* Maybe add more customization for user */
-    /* like header dice backround, and some color option buttons */
-    /* do that for every element in the dice */
+function changeDotColor(color) {
+    lmDot.style.backgroundColor = color;
+    ltlDot.style.backgroundColor = color;
+    lmlDot.style.backgroundColor = color;
+    lblDot.style.backgroundColor = color;
+    ltrDot.style.backgroundColor = color;
+    lmrDot.style.backgroundColor = color;
+    lbrDot.style.backgroundColor = color;
+
+    rmDot.style.backgroundColor = color;
+    rtlDot.style.backgroundColor = color;
+    rmlDot.style.backgroundColor = color;
+    rblDot.style.backgroundColor = color;
+    rtrDot.style.backgroundColor = color;
+    rmrDot.style.backgroundColor = color;
+    rbrDot.style.backgroundColor = color;
+}
+
+function backgroundWhite() {
+    changeBackground('white', 'black')
+}
+
+function diceWhite() {
+    changeDiceColor('white')
+}
+
+function dotWhite() {
+    changeDotColor('white')
 }
