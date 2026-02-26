@@ -268,6 +268,10 @@ function backgroundBlack() {
     changeBackground('black', 'white')
 }
 
+function backgroundRed() {
+    changeBackground('red', 'white')
+}
+
 function diceWhite() {
     changeDiceColor('white')
 }
@@ -276,10 +280,18 @@ function diceBlack() {
     changeDiceColor('black')
 }
 
+function diceRed() {
+    changeDiceColor('red')
+}
+
 function dotWhite() {
     changeDotColor('white')
 }
 
 function dotBlack() {
     changeDotColor('black')
+}
+
+function dotRed() {
+    changeDotColor('red')
 }

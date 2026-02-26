@@ -18,7 +18,8 @@ body {
     border-color: blue;
     border-style: inset;
     border-radius: 20%;
-    margin-left: 20px;
+    margin-left: 35px;
+    margin-top: 5px;
 }
 
 .dice-1 {
