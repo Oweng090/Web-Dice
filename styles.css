@@ -187,4 +187,6 @@ body {
 .scroll-content {
     overflow-y: scroll;
     height: 225px;
+    width: 25%;
+    margin: 0 auto;
 }
