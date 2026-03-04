@@ -187,6 +187,7 @@ body {
 .scroll-content {
     overflow-y: scroll;
     height: 225px;
+    scrollbar-color: lime blue;
     /* change width and keep center */
     width: 25%;
     margin: 0 auto;
