@@ -275,6 +275,11 @@ function backgroundRed() {
 function backgroundBlue() {
     changeBackground('darkblue', 'white')
 }
+
+function backgroundGreen() {
+    changeBackground('green', 'black')
+}
+
 function diceWhite() {
     changeDiceColor('white')
 }
@@ -291,6 +296,10 @@ function diceBlue() {
     changeDiceColor('darkblue')
 }
 
+function diceGreen() {
+    changeDiceColor('green')
+}
+
 function dotWhite() {
     changeDotColor('white')
 }
@@ -305,4 +314,8 @@ function dotRed() {
 
 function dotBlue() {
     changeDotColor('darkblue')
+}
+
+function dotGreen() {
+    changeDotColor('green')
 }
