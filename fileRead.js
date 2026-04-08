@@ -1,9 +1,10 @@
 // Add an event listener to the file input
 document.getElementById('fileInput').addEventListener('change', function(event) {
     const file = event.target.files[0]; // Get the first selected file
+    const reader = new FileReader(); // Create a filereader object
 
     if (file) {
-        const reader = new FileReader(); // Create a filereader object
+        
 
         // Define what happens when the file is successfully read
         reader.onload = function(e) {
