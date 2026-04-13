@@ -10,6 +10,10 @@ document.getElementById('fileInput').addEventListener('change', function(event) 
         reader.onload = function(e) {
             const contents = e.target.result; // The file content as a text string
             console.log(contents);
+
+            if(contents.includes("")) { // scan for theme elements to apply.
+
+            }
             // Display the content in the designated div
             document.getElementById('fileContentDisplay').innerText = contents;
         };
