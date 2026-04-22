@@ -41,6 +41,15 @@ document.getElementById('fileInput').addEventListener('change', function(event) 
             else if(contents.includes("Background - DarkPurple")) {
                 document.body.style.backgroundColor = "darkpurple";
             }
+            else if(contents.includes("Background - Purple")) {
+                document.body.style.backgroundColor = "purple";
+            }
+            else if(contents.includes("Background - LightPurple")) {
+                document.body.style.backgroundColor = "lightpurple";
+            }
+            else if(contents.includes("Background - Pink")) {
+                document.body.style.backgroundColor = "pink";
+            }
 
             // DICE COLOR LOGIC
             if(contents.includes("Dice - Black")) { // Dice format (Background of dice)
