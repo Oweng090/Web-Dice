@@ -11,8 +11,8 @@ document.getElementById('fileInput').addEventListener('change', function(event) 
             const contents = e.target.result; // The file content as a text string
             console.log(contents);
 
-            if(contents.includes("")) { // scan for theme elements to apply.
-
+            if(contents.includes("Background - Black")) { // background format do the other elements the same way.
+                document.body.style.backgroundColor = "black";
             }
             // Display the content in the designated div
             document.getElementById('fileContentDisplay').innerText = contents;
