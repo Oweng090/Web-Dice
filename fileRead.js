@@ -24,7 +24,7 @@ document.getElementById('fileInput').addEventListener('change', function(event) 
                 document.querySelector('.dice-2').style.backgroundColor = "black";
             }
 
-            // Dot COLOR LOGIC
+            // DOT COLOR LOGIC
             if(contents.includes("Dots - Black")) { // Dots color format
                 
             }
