@@ -17,6 +17,30 @@ document.getElementById('fileInput').addEventListener('change', function(event) 
             else if(contents.includes("Background - Red")) {
                 document.body.style.backgroundColor = "red";
             }
+            else if(contents.includes("Background - Orange")) {
+                document.body.style.backgroundColor = "orange";
+            }
+            else if(contents.includes("Background - Yellow")) {
+                document.body.style.backgroundColor = "yellow";
+            }
+            else if(contents.includes("Background - Lime")) {
+                document.body.style.backgroundColor = "lime";
+            }
+            else if(contents.includes("Background - Green")) {
+                document.body.style.backgroundColor = "green";
+            }
+            else if(contents.includes("Background - LightBlue")) {
+                document.body.style.backgroundColor = "lightblue";
+            }
+            else if(contents.includes("Background - Blue")) {
+                document.body.style.backgroundColor = "blue";
+            }
+            else if(contents.includes("Background - DarkBlue")) {
+                document.body.style.backgroundColor = "darkblue";
+            }
+            else if(contents.includes("Background - DarkPurple")) {
+                document.body.style.backgroundColor = "darkpurple";
+            }
 
             // DICE COLOR LOGIC
             if(contents.includes("Dice - Black")) { // Dice format (Background of dice)

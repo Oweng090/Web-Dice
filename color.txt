@@ -1,2 +1,2 @@
-Background - Black
+Background - LightBlue
 Dice - Black
